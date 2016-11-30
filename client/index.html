@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app = 'myApp'>
+<head>
+	<title>MEAN Login + Reg</title>
+	<link rel="stylesheet" href="/css/main.css">
+	<script type="text/javascript" src = './bower_components/angular/angular.js'></script>
+	<script type="text/javascript" src = './bower_components/angular-route/angular-route.js'></script>
+	<script type="text/javascript" src ='./assets/app.js'></script>
+	<script type="text/javascript" src = './factories/UserFactory.js'></script>
+	<script type="text/javascript" src = './factories/GameFactory.js'></script>
+	<script type="text/javascript" src = './controllers/usersController.js'></script>
+	<script type="text/javascript" src = './controllers/profileController.js'></script>
+	<script type="text/javascript" src = './controllers/CreateController.js'></script>
+	<script type="text/javascript" src = './controllers/GameController.js'></script>
+</head>
+<body>
+	<h3>Welcome</h3>
+  <hr>
+  <div ng-view =""></div>
+
+</body>
+</html>

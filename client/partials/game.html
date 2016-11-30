@@ -1,0 +1,37 @@
+<h2>Hi {{user.firstname}}!</h2>
+<h3>Choose the best answer for each question and submit once done.</h3>
+<h4>Goodluck!</h4>
+<a href="#/profile">Home</a>
+
+
+
+<div ng-repeat="quest in game">
+  <form ng-submit="answer(quest._id)">
+    <ul >
+      <ol>{{quest.question}} <br>
+      <p ng-model="quest._id.answer">{{quest.answer}} <input type="radio"></p>
+      <input type="radio">
+      <p>{{quest.fakeA}}</p>
+      <input type="radio">
+      <p>{{quest.fakeB}}</p>
+      </ol>
+    </ul>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+</div>
+
+
+
+
+  <!-- <form ng-submit="">
+    <ul ng-repeat="quest in game">
+      <ol>{{quest.question}} <br>
+        <input type="radio">
+        <p>{{quest.answer}}</p>
+        <input type="radio">
+        <p>{{quest.fakeA}}</p>
+        <input type="radio">
+        <p>{{quest.fakeB}}</p>
+      </ol>
+    </ul><br>
+  </form> -->

@@ -1,0 +1,18 @@
+<p ng-repeat='error in regErrors'>
+  {{error.message}}
+</p>
+<form ng-submit="register(newUser)">
+  <h2>Registration</h2>
+  <p>Email: </p><input type="email" ng-model="newUser.email"> <br>
+  <p>First Name: </p><input type="text" ng-model="newUser.firstname"> <br>
+  <p>Last Name: </p><input type="text" ng-model="newUser.lastname"> <br>
+  <p>Password: </p><input type="password" ng-model="newUser.password"> <br>
+  <p>Confirm Password: </p><input type="password" ng-model="newUser.conf_password"> <br>
+  <input type="submit" value="Register">
+</form>
+<form ng-submit="login(user)">
+  <h2>Login</h2>
+  <p>Email: </p><input type="email" ng-model="user.email"> <br>
+  <p>Password: </p><input type="password" ng-model="user.password"> <br>
+  <input type="submit" value="Login">
+</form>
