@@ -38,11 +38,12 @@ myApp.controller('UserController', ['$scope', '$location', '$routeParams', 'User
     UserFactory.login(user, function(){
 			$location.url('/profile');
 		})
-  },
+  };
+
 	$scope.logout = function(){
 		UserFactory.logout($scope.user, function(){
 			$location.url('/')
 		});
-	}
+	};
 
 }]);
